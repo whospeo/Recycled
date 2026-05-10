@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "recycled",
+	"version": "1.0+1.20.1",
+	"name": "Recycled",
+	"description": "With this mod you can recycle tools and other utilities to obtain crafting materials",
+	"authors": [
+		"whospeo"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/recycled/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.whospeo.Recycled"
+		],
+		"fabric-datagen": [
+			"com.whospeo.RecycledDataGenerator"
+		],
+		"client": [
+			"com.whospeo.RecycledClient"
+		]
+	},
+	"mixins": [
+		"recycled.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
